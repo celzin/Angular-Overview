@@ -13,7 +13,7 @@
 </h1>
 
 <div align="justify">
-Este repositório contém os recursos associados ao artigo "Mapeando a Sinergia de Jogadores no Futebol Virtual: Uma Abordagem Analítica Através de Grafos e Exploração de Comunidades", que apresenta uma metodologia inovadora para analisar a conexão entre jogadores de futebol profissional através de técnicas avançadas de grafos.
+Este repositório contém os recursos associados à visão geral de <code>Angular</code>, um framework de código aberto desenvolvido pelo Google para a criação de aplicativos dinâmicos e interativos da web.
 </div>
 
 ## Estrutura do Repositório
