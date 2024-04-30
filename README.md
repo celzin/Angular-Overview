@@ -19,8 +19,8 @@ Este repositório contém os recursos associados à visão geral de <code>Angula
 ## Estrutura do Repositório
 <!--
 - `article/`: Diretório contendo o artigo científico em formato LaTeX.
-- `src/`: Diretório com os scripts Python usados para gerar os grafos e realizar as análises.
-- `dataset/`: Diretório com os conjuntos de dados filtrados utilizados nas análises. -->
+- `src/`: Diretório com os scripts Python usados para gerar os grafos e realizar as análises. -->
+- `project/`: Diretório com os conjuntos de código utilizados. 
 - `imgs/`: Diretório com as imagens utilizadas.
 
 </div>
