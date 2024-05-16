@@ -1,20 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+// Components
 import { NewComponent } from './components/new-component/new-component.component';
+import { TemplateBindingComponent } from './components/template/template-binding/template-binding.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NewComponent],
+  imports: [CommonModule, RouterOutlet, NewComponent, TemplateBindingComponent],
   // templateUrl: './app.component.html',
   template: `
     <!-- <router-outlet /> -->
     <h1>Curso de Angular</h1>
-    Antigo: <app-new-component></app-new-component>
-    Novo: <app-new-component />
+    <app-template-binding />
   `,
-  // styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'meu-primeiro-projeto-latest';
