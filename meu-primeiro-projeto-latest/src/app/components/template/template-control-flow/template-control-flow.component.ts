@@ -22,7 +22,8 @@ export class TemplateControlFlowComponent {
     return index;
   }
  
-  public itens = [{ name: 'Celso Vinícius '}];
+  public itens: Array<{ name: string }> = [ { name: 'Celso' }];
+
   public addNewName(value: string){
     return this.itens.push({ name: value });
   }
