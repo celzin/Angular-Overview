@@ -3,7 +3,6 @@
 <h3>IF</h3>
 
 <!-- Nova Forma -->
-
 @if (isTrue){
  É verdadeiro
 } @else if (1 == 1){
@@ -13,9 +12,41 @@
 }
 
 <!-- Antiga Forma -->
-
 <ng-container *ngIf="isTrue; else isFalse">
     <p>Está correto</p>
     <p>É verdadeiro</p>
 </ng-container>
 <ng-template #isFalse> Não está correto </ng-template>
+
+<hr />
+
+<h3>IF, FOR</h3>
+<!-- Nova Forma -->
+@if(loadingData$ | async; as data) {
+    <ul>
+        @for(item of data; track item){
+            <li>{{ item }}</li>
+        }
+    </ul>
+} @else {
+    <p>Carregando...</p>
+}
+
+@for(item of loadingData$ | async; track item){
+    <li>{{ item }}</li>
+}
+
+<!-- Forma Antiga -->
+<!-- <ng-container *ngIf="loadingData$ | async as data; else loading">
+    <p>{{ data }}</p>
+</ng-container>
+<ng-template #Loading> <p>Carregando...</p> </ng-template> -->
+
+<!-- <ng-container *ngIf="loadingData$ | async as data; else loading">
+    <ul>
+        <ng-container *ngFor="let item of data; trackBy: trackByFn">
+            <li> {{ item }} </li>
+        </ng-container>
+    </ul>
+</ng-container>
+<ng-template #Loading> <p>Carregando...</p> </ng-template> -->
